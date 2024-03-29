@@ -9,7 +9,9 @@ add_executable(sorting_algorithms main.cpp
         MergeSort.cpp
         include/MergeSort.h
         CountingSort.cpp
-        include/CountingSort.h)
+        include/CountingSort.h
+        ShellSort.cpp
+        include/ShellSort.h)
 
 include_directories(.)
 include_directories(include)

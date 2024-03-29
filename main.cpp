@@ -4,6 +4,7 @@
 #include "include/SortingAlgorithm.h"
 #include "include/CountingSort.h"
 #include "include/MergeSort.h"
+#include "include/ShellSort.h"
 
 void printSolution(const std::vector<int> &vec) {
     for (int val: vec) {
@@ -22,8 +23,9 @@ int main() {
 //    std::sort(verify.begin(), verify.end());
 //    assert(vec == verify && "Counting Sort");
 
-    SortingAlgorithm *sorter = new MergeSort();
+    SortingAlgorithm *sorter = new ShellSort();
     sorter->sort(vec);
     printSolution(vec);
+
     return 0;
 }
