@@ -3,6 +3,7 @@
 void CountingSort::sort(std::vector<int> &vec) {
     if (vec.empty())
         return;
+
     int maxValue = *std::max_element(vec.begin(), vec.end());
     frequency.resize(maxValue + 1, 0);
     for (int val: vec) {
