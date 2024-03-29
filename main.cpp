@@ -5,6 +5,7 @@
 #include "include/CountingSort.h"
 #include "include/MergeSort.h"
 #include "include/ShellSort.h"
+#include "include/HeapSort.h"
 
 void printSolution(const std::vector<int> &vec) {
     for (int val: vec) {
@@ -23,7 +24,7 @@ int main() {
 //    std::sort(verify.begin(), verify.end());
 //    assert(vec == verify && "Counting Sort");
 
-    SortingAlgorithm *sorter = new ShellSort();
+    SortingAlgorithm *sorter = new HeapSort();
     sorter->sort(vec);
     printSolution(vec);
 

@@ -11,7 +11,10 @@ add_executable(sorting_algorithms main.cpp
         CountingSort.cpp
         include/CountingSort.h
         ShellSort.cpp
-        include/ShellSort.h)
+        include/ShellSort.h
+        HeapSort.cpp
+        include/HeapSort.h
+)
 
 include_directories(.)
 include_directories(include)
