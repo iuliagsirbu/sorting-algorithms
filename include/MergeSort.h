@@ -4,6 +4,11 @@
 #include "include/SortingAlgorithm.h"
 
 class MergeSort : public SortingAlgorithm {
+private:
+    static void merge(std::vector<int> &vec, int p, int q, int r);
+
+    void mergesort(std::vector<int> &vec, int p, int r);
+
 public:
     void sort(std::vector<int> &vec) override;
 };
