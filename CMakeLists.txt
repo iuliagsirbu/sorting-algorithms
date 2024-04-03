@@ -14,6 +14,8 @@ add_executable(sorting_algorithms main.cpp
         include/ShellSort.h
         HeapSort.cpp
         include/HeapSort.h
+        RadixSort.cpp
+        include/RadixSort.h
 )
 
 include_directories(.)
