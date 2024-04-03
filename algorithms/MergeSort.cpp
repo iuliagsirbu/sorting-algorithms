@@ -1,4 +1,4 @@
-#include "include/MergeSort.h"
+#include "MergeSort.h"
 
 void MergeSort::sort(std::vector<int> &vec) {
     mergesort(vec, 0, vec.size() - 1);

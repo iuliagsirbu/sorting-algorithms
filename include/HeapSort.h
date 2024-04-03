@@ -1,7 +1,7 @@
 #ifndef SORTING_ALGORITHMS_HEAPSORT_H
 #define SORTING_ALGORITHMS_HEAPSORT_H
 
-#include "include/SortingAlgorithm.h"
+#include "SortingAlgorithm.h"
 
 class HeapSort : public SortingAlgorithm {
 private:

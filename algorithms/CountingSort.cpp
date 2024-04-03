@@ -1,4 +1,4 @@
-#include "include/CountingSort.h"
+#include "CountingSort.h"
 
 void CountingSort::sort(std::vector<int> &vec) {
     if (vec.empty())

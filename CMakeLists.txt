@@ -4,19 +4,19 @@ project(sorting_algorithms)
 set(CMAKE_CXX_STANDARD 17)
 
 add_executable(sorting_algorithms main.cpp
-        SortingAlgorithm.cpp
+        algorithms/SortingAlgorithm.cpp
         include/SortingAlgorithm.h
-        MergeSort.cpp
+        algorithms/MergeSort.cpp
         include/MergeSort.h
-        CountingSort.cpp
+        algorithms/CountingSort.cpp
         include/CountingSort.h
-        ShellSort.cpp
+        algorithms/ShellSort.cpp
         include/ShellSort.h
-        HeapSort.cpp
+        algorithms/HeapSort.cpp
         include/HeapSort.h
-        RadixSort.cpp
+        algorithms/RadixSort.cpp
         include/RadixSort.h
-        QuickSort.cpp
+        algorithms/QuickSort.cpp
         include/QuickSort.h
 )
 
