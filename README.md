@@ -2,9 +2,9 @@
 
 Implementation and analysis of various sorting algorithms in C++.
 
-- [ ] RadixSort
+- [x] RadixSort
 - [x] MergeSort
 - [x] ShellSort
 - [x] CountingSort
 - [ ] QuickSort
-- [ ] HeapSort
+- [x] HeapSort

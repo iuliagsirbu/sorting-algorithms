@@ -1,11 +1,12 @@
 #include <iostream>
 #include <vector>
 #include <cassert>
-#include "include/SortingAlgorithm.h"
-#include "include/CountingSort.h"
-#include "include/MergeSort.h"
-#include "include/ShellSort.h"
-#include "include/HeapSort.h"
+#include "SortingAlgorithm.h"
+#include "CountingSort.h"
+#include "MergeSort.h"
+#include "ShellSort.h"
+#include "HeapSort.h"
+#include "RadixSort.h"
 
 void printSolution(const std::vector<int> &vec) {
     for (int val: vec) {
@@ -24,7 +25,8 @@ int main() {
 //    std::sort(verify.begin(), verify.end());
 //    assert(vec == verify && "Counting Sort");
 
-    SortingAlgorithm *sorter = new HeapSort();
+//    SortingAlgorithm *sorter = new HeapSort();
+    SortingAlgorithm *sorter = new RadixSort(65536); // 2^16 = 65536
     sorter->sort(vec);
     printSolution(vec);
 
