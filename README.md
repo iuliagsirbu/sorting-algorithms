@@ -6,5 +6,5 @@ Implementation and analysis of various sorting algorithms in C++.
 - [x] MergeSort
 - [x] ShellSort
 - [x] CountingSort
-- [ ] QuickSort
+- [x] QuickSort
 - [x] HeapSort
