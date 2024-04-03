@@ -7,6 +7,7 @@
 #include "ShellSort.h"
 #include "HeapSort.h"
 #include "RadixSort.h"
+#include "QuickSort.h"
 
 void printSolution(const std::vector<int> &vec) {
     for (int val: vec) {
@@ -26,7 +27,8 @@ int main() {
 //    assert(vec == verify && "Counting Sort");
 
 //    SortingAlgorithm *sorter = new HeapSort();
-    SortingAlgorithm *sorter = new RadixSort(65536); // 2^16 = 65536
+//    SortingAlgorithm *sorter = new RadixSort(65536); // 2^16 = 65536
+    SortingAlgorithm *sorter = new QuickSort();
     sorter->sort(vec);
     printSolution(vec);
 
