@@ -18,6 +18,8 @@ add_executable(sorting_algorithms main.cpp
         include/RadixSort.h
         algorithms/QuickSort.cpp
         include/QuickSort.h
+        SortingException.cpp
+        SortingException.h
 )
 
 include_directories(.)

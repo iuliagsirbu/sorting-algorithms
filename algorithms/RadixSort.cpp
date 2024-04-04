@@ -21,17 +21,26 @@ void RadixSort::sort(std::vector<int> &vec) {
     if (vec.empty()) return;
 
     int maxValue = *std::max_element(vec.begin(), vec.end());
-    int maxDigits = RadixSort::maxDigits(maxValue);
+    int maxDigits = this->maxDigits(maxValue);
+
+    std::vector<int> output(vec.size(), 0);
 
     for (int place = 0; place < maxDigits; place++) {
-        std::vector<int> sorted(vec.size());
+        std::vector<int> count(base, 0);
 
         for (int i = 0; i < vec.size(); i++) {
-            sorted[i] = extractDigit(vec[i], place);
+            count[extractDigit(vec[i], place)]++;
         }
 
-        countingSort.sort(sorted);
+        for (int i = 1; i < base; i++) {
+            count[i] += count[i - 1];
+        }
 
-        vec = sorted;
+        for (int i = vec.size() - 1; i >= 0; i--) {
+            output[count[extractDigit(vec[i], place)] - 1] = vec[i];
+            count[extractDigit(vec[i], place)]--;
+        }
+
+        vec = output;
     }
 }
